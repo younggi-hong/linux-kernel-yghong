@@ -1,0 +1,94 @@
+---- SHKO Matches (95 in 30 files) ----
+Chip.c (kernel\irq):		printk("[handle_edge_irq] SHKO : irq=%d\n", irq);
+Compile.h (include\generated):#define LINUX_COMPILE_HOST "SHKO"
+Compiler-gcc.h.bak (include\linux):#error "SHKO"
+Compiler.h.bak (include\linux):	#error "SHKO"
+Const.h.bak (include\linux):#error "SHKO"
+Cpu.c (arch\arm\plat-s3c24xx):	printk("[s3c24xx_init_io] SHKO : START\n");
+Cpu.c (arch\arm\plat-s3c24xx):	/* SHKO : cpu_architecture 함수 리턴값은 7이다. */
+Gpio-core.h (arch\arm\plat-samsung\include\plat):/* SHKO : CONFIG_S3C_GPIO_TRACK is not Defined */
+Gpio-track.h (arch\arm\mach-s3c2410\include\mach):	//printk("[s3c_gpiolib_getchip] SHKO, pin=%d\n", pin);
+Gpio-track.h (arch\arm\mach-s3c2410\include\mach):	//printk("[s3c_gpiolib_getchip] SHKO, chip->chip.base=0x%08x\n", chip->chip.base);
+Gpio-track.h (arch\arm\mach-s3c2410\include\mach):	//printk("[s3c_gpiolib_getchip] SHKO, chip->chip.ngpio=0x%08x\n", chip->chip.ngpio);
+Gpio.h.bak (include\asm-generic): #error "SHKO"
+Init.c (arch\arm\plat-samsung):	printk("[s3c_init_cpu] SHKO : START\n");
+Init.c (arch\arm\plat-samsung):	/* SHKO : Cpu.c (arch\arm\plat-s3c24xx)	파일의 s3c2416_map_io 함수로 세팅됨. */
+Init.c (arch\arm\plat-samsung):		(cpu->init_clocks)(xtal);	/* SHKO : Cpu.c (arch\arm\plat-s3c24xx)	파일에서 s3c2416_init_clocks 함수로 세팅됨. */
+Init.c (arch\arm\plat-samsung):	/* SHKO : name = "s3c2440-uart" */
+Init.c (arch\arm\plat-samsung):	printk("[s3c24xx_init_uartdevs]SHKO : name=%s\n", name);
+Init.c (arch\arm\plat-samsung):		(cpu->init_uarts)(cfg, no);	/* SHKO : s3c2416_init_uarts 함수를 호출함. */
+Init.c (arch\arm\plat-samsung):	/* SHKO : cpu->idcode = 0x32450003 */
+Init.c (arch\arm\plat-samsung):	printk("[s3c_arch_init]SHKO : cpu->idcode=0x%08x\n", cpu->idcode);
+Init.c (arch\arm\plat-samsung):	ret = (cpu->init)();		/* SHKO : Cpu.c (arch\arm\plat-s3c24xx) 파일에서 s3c2416_init 함수로 세팅됨. */
+Io.h.bak (arch\arm\include\asm):#error "SHKO"
+Io.h.bak (include\asm-generic):#error "SHKO"
+Irq.c (arch\arm\plat-s3c24xx):	printk("[s3c_irqext_mask]SHKO, %d\n", irqno);
+Irq.c (arch\arm\plat-s3c24xx):	//printk("[s3c_irqext_ack]SHKO, %d\n", data->irq);
+Irq.c (arch\arm\plat-s3c24xx):	printk("[s3c_irqext_unmask]SHKO, %d\n", data->irq);
+Irq.c (arch\arm\plat-s3c24xx):	printk("[s3c_irqext_type]SHKO, %d\n", data->irq);
+Irq.c (arch\arm\plat-s3c24xx):/* SHKO, CONFIG_FIQ is not defined */
+Irq.c (arch\arm\plat-s3c24xx):	printk("[s3c24xx_init_irq] SHKO : Start\n");		//SHKO, Added
+Irqs.h (arch\arm\mach-s3c2410\include\mach):#define IRQ_EINT13     S3C2410_IRQ(41)	/* SHKO :  57 : ethernet Rx Interrupt */
+Irqs.h (arch\arm\mach-s3c2410\include\mach):#define IRQ_EINT15     S3C2410_IRQ(43)	/* SHKO :  59 : WAVE Rx Interrupt */
+Kernel.h.bak (include\linux):#error "SHKO"
+Mach-mango2450.c (arch\arm\mach-s3c2416):#if 0	//SHKO, Origin
+Mach-mango2450.c (arch\arm\mach-s3c2416):		/* SHKO, S3C2416_VA_SMSC9220=0xf8000000 */
+Mach-mango2450.c (arch\arm\mach-s3c2416):#else	//SHKO, Added
+Mach-mango2450.c (arch\arm\mach-s3c2416):		/* SHKO, S3C2416_VA_SMSC9220=0xf8000000 */
+Mach-mango2450.c (arch\arm\mach-s3c2416):		/* SHKO, S3C2416_VA_WAVE_MODEM=0xfa000000 */
+Mach-mango2450.c (arch\arm\mach-s3c2416):/* SHKO, Added WAVE Modem */
+Mach-mango2450.c (arch\arm\mach-s3c2416):/* SHKO, Added WAVE Modem */
+Mach-mango2450.c (arch\arm\mach-s3c2416):/* SHKO, Added WAVE Modem */
+Mach-mango2450.c (arch\arm\mach-s3c2416):        &mango24_wave_modem,		/* SHKO, Added */
+Mach-mango2450.c (arch\arm\mach-s3c2416):	printk("[mango2450_map_io] SHKO : Start\n");
+Mach-mango2450.c (arch\arm\mach-s3c2416):        /* SHKO, Added */
+Mach-mango2450.c (arch\arm\mach-s3c2416):/* SHKO, Added */
+Mach-mango2450.c (arch\arm\mach-s3c2416):        printk("[mango24_wave_dsrc_init] SHKO, cs1=0x%08x\n",cs1);
+Mach-mango2450.c (arch\arm\mach-s3c2416):        printk("[mango24_wave_dsrc_init] SHKO, S3C2412_SMBCR=0x%08x\n", __raw_readl(S3C2412_SMBCR(1)));
+Mach-mango2450.c (arch\arm\mach-s3c2416):	printk("[mango2450_machine_init] SHKO : Start\n");		//SHKO, Added
+Mach-mango2450.c (arch\arm\mach-s3c2416):	/* SHKO, Added */
+Map.h (arch\arm\include\asm\mach):/* SHKO, CONFIG_MMU is defined */
+Map.h (arch\arm\plat-s3c24xx\include\plat):/* SHKO, Added */
+Map.h.bak (arch\arm\mach-s3c2410\include\mach):#error "SHKO"
+Memory.h (arch\arm\include\asm):/* SHKO, CONFIG_MMU is defined */
+Memory.h (arch\arm\include\asm):/* SHKO : #define CONFIG_PAGE_OFFSET 0xC0000000 */
+Memory.h (arch\arm\include\asm): /* SHKO : CONFIG_THUMB2_KERNEL is not defined */
+Printk.h (include\linux):/* SHKO : 이 안으로 들어옴. */
+Printk.h.bak (include\linux):#error "SHKO1"
+Printk.h.bak (include\linux):#error "SHKO2"
+Printk.h.bak (include\linux):/* SHKO : 이 안으로 들어옴. */
+Regs-gpio.h (arch\arm\mach-s3c2410\include\mach):/* SHKO : 컴파일시 이 안으로 들어옴. */
+S3c2416.c (arch\arm\mach-s3c2416):	printk("[s3c2416_init_uarts] SHKO : START\n");
+S3c2416.c (arch\arm\mach-s3c2416):	printk("[s3c2416_map_io] SHKO : START\n");
+S3c2440.c (drivers\tty\serial):	/* SHKO, dev->name=s3c2440-uart */
+Samsung.c (drivers\tty\serial):	printk("[s3c24xx_serial_startup] SHKO : port->mapbase = 0x%08x\n",port->mapbase);
+Samsung.c (drivers\tty\serial):	printk("[s3c24xx_serial_startup] SHKO : port->iobase = 0x%08x\n",port->iobase);
+Samsung.c (drivers\tty\serial):	printk("[s3c24xx_serial_startup] SHKO : ourport->rx_irq = 0x%08x\n",ourport->rx_irq);
+Samsung.c (drivers\tty\serial):	printk("[s3c24xx_serial_startup] SHKO : port->irq = 0x%08x\n",port->irq);
+Samsung.c (drivers\tty\serial):	printk("[s3c24xx_serial_startup] SHKO : s3c24xx_serial_portname = %s\n",s3c24xx_serial_portname(port));
+Samsung.c (drivers\tty\serial):	printk("[s3c24xx_serial_startup] SHKO : ourport->tx_irq = 0x%08x\n",ourport->tx_irq);
+Samsung.c (drivers\tty\serial):	printk("[s3c24xx_serial_startup] SHKO : port->irq = 0x%08x\n",port->irq);
+Samsung.c (drivers\tty\serial):	printk("[s3c24xx_serial_startup] SHKO : s3c24xx_serial_portname = %s\n",s3c24xx_serial_portname(port));
+Smsc911x.c (drivers\net):	/* SHKO : res_size = 65536(==64KB), Mach-mango2450.c (arch\arm\mach-s3c2416)	파일의 mango24_smsc911x_resources 배열 참조 */
+Smsc911x.c (drivers\net):	printk("[smsc911x_drv_probe] SHKO, res_size = %d\n", res_size);
+Smsc911x.c (drivers\net):	printk("[smsc911x_drv_probe] SHKO, res->start = 0x%08x\n", res->start);
+Smsc911x.c (drivers\net):	/* SHKO : res_size = 65536(==64KB), Mach-mango2450.c (arch\arm\mach-s3c2416)	파일의 mango24_smsc911x_resources 배열 참조 */
+Smsc911x.c (drivers\net):	/* SHKO : res->start = 0x28000000, Mach-mango2450.c (arch\arm\mach-s3c2416)	파일의 mango24_smsc911x_resources 배열 참조 */
+Smsc911x.c (drivers\net):	/* SHKO, irq_res->start = 0x00000039 = 57 */
+Smsc911x.c (drivers\net):	/* SHKO : Mach-mango2450.c (arch\arm\mach-s3c2416) 파일의 mango24_smsc911x_resources 배열 참조 */
+Smsc911x.c (drivers\net):	/* SHKO, pdata->ioaddr = 0xc4880000 */
+Smsc911x.c (drivers\net):	printk("[smsc911x_drv_probe] SHKO, pdata->ioaddr = 0x%08x\n", pdata->ioaddr);
+Smsc911x.c (drivers\net):	printk("[smsc911x_drv_probe] SHKO : dev->irq = %d\n", dev->irq);
+Smsc911x.c (drivers\net):	/* SHKO, dev->irq = 0x00000039 = 57 */
+Smsc911x.c (drivers\net):	/* SHKO : Mach-mango2450.c (arch\arm\mach-s3c2416) 파일의 mango24_smsc911x_resources 배열 참조 */
+Smsc911x.c (drivers\net):	printk("[smsc911x_drv_probe] SHKO : after request_irq\n");
+System.h (arch\arm\include\asm):/* SHKO : 아래 #if __LINUX_ARM_ARCH__ >= 4 안으로 들어감. */
+System.h (arch\arm\include\asm):/* SHKO, cr_alignment = 0x00053177 */
+Waveint.c (drivers\char):#if 1	/* SHKO_TEST */
+Waveint.c (drivers\char):  #if 0	//SHKO, Origin
+Waveint.c (drivers\char):  #if 0	//SHKO, Origin
+Waveint.c (drivers\char):	  #if 0	//SHKO, Origin
+Waveint.c (drivers\char):    #if 0	//SHKO, Origin
+Waveint.c (drivers\char):#if 1	/* SHKO_TEST */
+Waveint.c (drivers\char):  #if 0	//SHKO, Origin
+Wave_reg.h (arch\arm\plat-s3c24xx\include\mach):/* SHKO, [주의] 4096과 1024로 정의하면 커널이 부팅하다가 죽음. */
