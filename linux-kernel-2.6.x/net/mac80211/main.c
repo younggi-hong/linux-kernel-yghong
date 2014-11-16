@@ -8,6 +8,11 @@
  * published by the Free Software Foundation.
  */
 
+/**
+ * @file main.c
+ *
+ */
+
 #include <net/mac80211.h>
 #include <linux/module.h>
 #include <linux/init.h>
